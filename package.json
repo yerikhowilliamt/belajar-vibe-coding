@@ -1,0 +1,24 @@
+{
+  "name": "vibe-coding",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "db:migrate": "bunx prisma migrate dev",
+    "db:generate": "bunx prisma generate",
+    "db:studio": "bunx prisma studio"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prisma": "^7.8.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.8.0",
+    "elysia": "^1.4.28"
+  }
+}
